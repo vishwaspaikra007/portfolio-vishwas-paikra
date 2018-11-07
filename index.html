@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vishwas Paikra</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poor Story" rel="stylesheet">
+    <style>
+        html
+	{
+		width: 100%;
+		height: 100%;		
+		animation-name: animate_html;
+		animation-duration: 8s;
+		animation-delay: 3s;
+		animation-timing-function: ease-in-out;
+	}
+html
+	{
+		background:radial-gradient(rgba(200,200,200,0.8),rgba(200,200,200,0.5),rgba(0,0,0,0.5),rgba(0,0,0,1));
+		background-size: 600% 600%;
+		animation-name: animate_html_background;
+		animation-iteration-count: infinite;
+		animation-duration: 30s;
+		animation-timing-function: ease;
+	}
+
+	@keyframes animate_html
+		{
+			0%{background-size: 100%;}
+			30%{background-size: 150%;}
+			70%{background-size: 150%;}
+			100%{background-size: 100%;}
+
+		}
+	@keyframes animate_html_background
+		{
+			0%{background-position: top left}
+			50%{background-position: bottom right}
+			100%{background-position: top left}
+
+		}
+body
+	{
+		margin: auto;
+		width:98%;
+		height: 100%;
+	}
+#animation
+		{
+			display: block;
+			position: relative;
+			box-sizing: border-box;
+
+			margin-top: 10px;
+			padding-top: 10px;
+			width: 100%;
+			height: 50px;
+			background: linear-gradient(to left,rgba(200,200,200,0),rgba(250,250,250,0.7));
+			box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 0px 4px 20px rgba(0,0,0,0.4);
+			animation-name: animate_animation;
+			animation-duration: 8s;
+			animation-delay: 3s;
+			animation-timing-function: ease-in-out;
+			border-left: 10px solid #88aaff;
+			border:4px solid white;
+		}
+	@keyframes animate_animation
+		{
+			0%{height: 50px;width:100%}
+			30%{height: 450px;width:100%;border-color: transparent;}
+			70%{height: 450px;width:100%;border-color: transparent;}
+			100%{height: 50px;width:100%}
+
+		}
+	#arrow
+		{ 
+			background-color: transparent;
+			bottom:-20%;
+			border-style: none;
+			padding: 0px; 
+			position: absolute;
+			font-size: 50px;
+			color: white;
+			transform: rotate(90deg);
+			margin-left: 50%;
+			animation-name: animate_arrow;
+			animation-duration: 8s;
+			animation-delay: 3s;
+			animation-timing-function: ease-in-out;
+		
+		}
+		@keyframes animate_arrow
+			{
+				0%{transform: rotate(90deg);margin-left: 50%;bottom:-20%}		
+				5%{transform: rotate(180deg);margin-left: 50%;bottom:0%;color: black}
+				20%{transform: rotate(180deg);margin-left: 0%;bottom:0%;color: black}
+				45%{transform: rotate(180deg);margin-left: 0%;bottom:0%;color: black} 
+				50%{transform: rotate(270deg);margin-left: 0%;bottom:0%;color: black}
+				55%{transform: rotate(360deg);margin-left: 0%;bottom:0%;color: black} 
+				80%{transform: rotate(360deg);margin-left: 0%;bottom:0%;color: black} 
+				95%{transform: rotate(360deg);margin-left: 50%;bottom:0%;}
+			    100%{transform: rotate(440deg);margin-left: 50%;bottom:-20%;}  
+			}
+		#arrow:hover
+			{
+			
+				text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 4px 10px rgba(0,0,0,0.4);
+
+			}
+#wrap
+	{
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		width: 80%;
+		height: 580px;
+		padding-top:20px;
+		margin: auto;
+		font-family: "Poor Story",Helvetica;
+		color: white;
+		text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 4px 10px rgba(0,0,0,0.4);
+		
+	}
+	@media only screen and (max-width: 1024px)
+		{
+			#wrap
+				{
+					width: 100%;
+				}
+		}
+
+
+
+	#column
+		{ 
+			display:table;
+			box-sizing: border-box;
+			width: 30%;
+			height: 530px;
+			background:rgba(250,250,250,0.2);
+			box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 0px 4px 20px rgba(0,0,0,0.4);
+			float: left;
+
+			border: 4px solid white;
+			
+		}
+		@media only screen and (max-width: 840px)
+		{
+			#column
+				{
+					width: 100%;
+				}
+		}
+
+		#profile_block
+			{
+				display: inline-block;
+				box-sizing: border-box;
+				padding: 10px;
+			}
+		#imgprofile
+			{
+				width: 100%;
+				height: 40%;
+				overflow: hidden;
+			}
+		#img
+			{
+				width: 100%;
+				margin:0px;
+				position: relative;	
+				transition: all 1s;		
+			}
+			#img:hover
+				{
+					width: 140%; 
+					background-size: cover;
+					margin-left: -40px;
+					
+				}
+		.icon
+			{
+				font-size: 26px;
+				position: relative;
+				top: 5px;
+				left: 0px;
+				margin-right: 10px;
+			}
+
+	#main
+		{
+			box-sizing: border-box;
+			width: 69%;
+			height: 1000px;
+			background:rgba(250,250,250,0.2);
+			box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 0px 4px 20px rgba(0,0,0,0.4);
+			float: left;
+			margin-left: 1%;
+			padding: 20px;
+			border: 4px solid white;
+		}
+		@media only screen and (max-width: 840px)
+		{
+			#main
+				{
+					width: 100%;
+					margin: 10px 0 0 0;
+
+				}
+		}
+		
+
+
+
+    </style>
+</head>
+<body>
+	<div id="background">
+		<div id="animation"><button type="button" onclick="" id="arrow">&#187</button></div>
+		<div id="wrap">
+			<div id="column">
+				<div id="imgprofile"><img id="img" src="image/profile2.jpeg" alt="profile picture"></div>
+				<div id="profile_block">
+					<p class="profile"><i class="material-icons icon">person</i>Vishwas Paikra</p>
+					<p class="profile"><i class="material-icons icon">cake</i>22 sept 1998</p>
+					<p class="profile"><i class="material-icons icon">call</i>0123456789</p>
+					<p class="profile"><i class="material-icons icon">email</i>vishwaspaikra007@gmail.com</p>
+					<p class="profile"><i class="material-icons icon">home</i>hno-354 ward-8 tata line kohka</p>
+				</div>
+			</div>
+				<div id="main">
+					<svg id="logo" width="100%" height="100px" style="border-bottom:3px solid black; ">
+						<polygon points="10,10 10,65 30,80 30,10" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke:black;"/>
+						<ellipse cx="85" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>						
+						<polygon points="180,0 130,45 155,84 195,70 195,50 175,40 185,60 155,60 175,20 195,30" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>	
+						<ellipse cx="250" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>				
+					</svg>
+					<p>
+						hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
+						>hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
+					</p>
+				</div>
+				<div id="side">
+					
+				</div>
+			
+			<footer></footer>
+		</div>
+	</div>
+
+</body>
+</html>
