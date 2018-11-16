@@ -53,7 +53,6 @@ body
 			display: block;
 			position: relative;
 			box-sizing: border-box;
-
 			margin-top: 10px;
 			padding-top: 10px;
 			width: 100%;
@@ -219,7 +218,7 @@ body
 </head>
 <body>
 	<div id="background">
-		<div id="animation"><button type="button" onclick="" id="arrow">&#187</button></div>
+		<div id="animation"><button type="button" onclick="open()" id="arrow">&#187</button></div>
 		<div id="wrap">
 			<div id="column">
 				<div id="imgprofile"><img id="img" src="image/profile2.jpeg" alt="profile picture"></div>
@@ -238,7 +237,7 @@ body
 						<polygon points="180,0 130,45 155,84 195,70 195,50 175,40 185,60 155,60 175,20 195,30" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>	
 						<ellipse cx="250" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>				
 					</svg>
-					<p>
+					<p id="para">
 						hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
 						>hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
 					</p>
@@ -250,6 +249,10 @@ body
 			<footer></footer>
 		</div>
 	</div>
-
+<script>
+    function open() {
+        document.getElementById("animation").style.background = "orange";
+    }
+</script>
 </body>
 </html>
