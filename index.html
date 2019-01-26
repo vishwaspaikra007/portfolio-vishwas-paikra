@@ -54,14 +54,43 @@ description : I'm currently a student who is trying his best
 					</svg>
 					<p id="para">
 				    	hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
-						>hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
 					</p>
+					<h2>Some screenshots of some of my works</h2>
 					<div class="myWork">
-					    <div class="myWorkBox" id="myWorkBox1"></div>
-					    <div class="myWorkBox" id="myWorkBox2"></div>
-					    <div class="myWorkBox" id="myWorkBox3"></div>
-					    <div class="myWorkBox" id="myWorkBox4"></div>
+					    <div class="myWorkBox" id="myWorkBox1">
+					        <img src="img/Screenshot%20(121).png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
+					        <a href="https://github.com/vishwaspaikra007"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+					        <p>
+					            This is my GitHub Account.<br>
+					            Please check out know to know more about my work.
+					        </p> 
+					    </div>
+					    <div class="myWorkBox" id="myWorkBox2">
+					        <img src="img/Screenshot%20(122).png" alt="flame game" class="imgWork" id="imgWork2" onclick="expand(this)">
+					        <a href="https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+					        <p>
+                                This is Flame Game.<br>
+                                Game to know about your future relationship.
+                            </p>
+					    </div>
+					    <div class="myWorkBox" id="myWorkBox3">
+					        <img src="img/Screenshot%20(123).png" alt="poem" class="imgWork" id="imgWork3" onclick="expand(this)">
+					        <a href="https://vishwaspaikra007.github.io/vishwas-paikra-poem/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a> 
+					        <p>
+					            Sometimes my soul emerges out as a Poet<br>
+					            Helping me to turn words into beautifully arrranged sentence causing it to rhyme.
+					        </p>
+					    </div>
+					    <div class="myWorkBox" id="myWorkBox4">
+					        <img src="img/Screenshot%20(125).png" alt="progress bar" class="imgWork" id="imgWork4" onclick="expand(this)">
+					        <a href="https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+					        <p>
+					            It's a site for documentation.<br>
+					            title and content side by side.
+					        </p>
+					    </div>
 					</div>
+					<div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
 				</div>
 				<div id="side">
 					
@@ -73,6 +102,14 @@ description : I'm currently a student who is trying his best
 <script>
     function open() {
         document.getElementById("animation").style.background = "orange";
+    }
+    function expand(a) {
+        var fuli = document.getElementById('fullImage1');
+        fuli.style.display = "block";
+        fuli.innerHTML = "<img src='" + a.src + "'>";
+    }
+    function abort(b) {
+        b.style.display = "none";
     }
 </script>
 </body>

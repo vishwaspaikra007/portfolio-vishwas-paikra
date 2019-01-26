@@ -190,6 +190,46 @@ body
     background: white;
     height: 400px;
     border-radius: 20px;
+    padding: 10px;
+    background: rgba(0,0,0,0.3)
+}
+.imgWork
+{
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.fullImage
+{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    padding: 50px;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.fullImage > img
+{
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+.pTag
+{
+    background: rgba(124,183,0,1);
+    text-align: center;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
 }
 @media only screen and (max-width: 840px)
 {
@@ -215,6 +255,7 @@ body
         width: 100%;
     }
 }
+
 
 
 
