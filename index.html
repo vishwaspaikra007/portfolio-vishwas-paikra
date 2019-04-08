@@ -4,113 +4,102 @@
    language : html/css/javascript
 description : I'm currently a student who is trying his best
               to learn every possible productive stuffs around him -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Vishwas Paikra</title>
-	<meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-	<!-- meta --> 
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poor Story" rel="stylesheet">
-</head>
-<body>
-	<div id="background">
-		<div id="animation"><button type="button" onclick="open()" id="arrow">&#187</button></div>
-		<div id="wrap">
-			<div id="column">
-				<div id="imgprofile"><img id="img" src="image/profile2.jpeg" alt="profile picture"></div>
-				<div id="profile_block">
-					<p class="profile"><i class="material-icons icon">person</i>Vishwas Paikra</p>
-					<p class="profile"><i class="material-icons icon">cake</i>22 sept 1998</p>
-					<p class="profile"><i class="material-icons icon">call</i>0123456789</p>
-					<p class="profile"><i class="material-icons icon">email</i>vishwaspaikra007@gmail.com</p>
-					<p class="profile"><i class="material-icons icon">home</i>hno-354 ward-8 tata line kohka</p>
-				</div>
-			</div>
-				<div id="main">
-					<svg id="logo" width="100%" height="100px" style="border-bottom:3px solid black; ">
-						<polygon points="10,10 10,65 30,80 30,10" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke:black;"/>
-						<ellipse cx="85" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>						
-						<polygon points="180,0 130,45 155,84 195,70 195,50 175,40 185,60 155,60 175,20 195,30" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>	
-						<ellipse cx="250" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>				
-					</svg>
-					<p id="para">
-				    	hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
-					</p>
-					<h2>Some screenshots of some of my works</h2>
-					<div class="myWork">
-					    <div class="myWorkBox" id="myWorkBox1">
-					        <img src="img/Screenshot%20(121).png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
-					        <a href="https://github.com/vishwaspaikra007"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-					        <p>
-					            This is my GitHub Account.<br>
-					            Please check out know to know more about my work.
-					        </p> 
-					    </div>
-					    <div class="myWorkBox" id="myWorkBox2">
-					        <img src="img/Screenshot%20(122).png" alt="flame game" class="imgWork" id="imgWork2" onclick="expand(this)">
-					        <a href="https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-					        <p>
-                                This is Flame Game.<br>
-                                Game to know about your future relationship.
-                            </p>
-					    </div>
-					    <div class="myWorkBox" id="myWorkBox3">
-					        <img src="img/Screenshot%20(123).png" alt="poem" class="imgWork" id="imgWork3" onclick="expand(this)">
-					        <a href="https://vishwaspaikra007.github.io/vishwas-paikra-poem/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a> 
-					        <p>
-					            Sometimes my soul emerges out as a Poet<br>
-					            Helping me to turn words into beautifully arrranged sentence causing it to rhyme.
-					        </p>
-					    </div>
-					    <div class="myWorkBox" id="myWorkBox4">
-					        <img src="img/Screenshot%20(125).png" alt="progress bar" class="imgWork" id="imgWork4" onclick="expand(this)">
-					        <a href="https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-					        <p>
-					            It's a site for documentation.<br>
-					            title and content side by side.
-					        </p>
-					    </div>
-					</div>
-					<div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
-				</div>
-				<div id="side">
-					
-				</div>
-			
-			<footer></footer>
-		</div>
-	</div>
-<script>
-    function open() {
-        document.getElementById("animation").style.background = "orange";
-    }
-    function expand(a) {
-        var fuli = document.getElementById('fullImage1');
-        fuli.style.display = "block";
-        fuli.innerHTML = "<img src='" + a.src + "'>";
-    }
-    function abort(b) {
-        b.style.display = "none";
-    }
-</script>
-</body>
-</html>
+			  <!DOCTYPE html>
+			  <html>
+			  <head>
+				  <title>Vishwas Paikra</title>
+				  <meta charset="utf-8">
+				  <script async src="https://cdn.ampproject.org/v0.js"></script>
+				  <title>Hello, AMPs</title>
+				  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+				  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+				  <script type="application/ld+json">
+					{
+					  "@context": "http://schema.org",
+					  "@type": "NewsArticle",
+					  "headline": "Open-source framework for publishing content",
+					  "datePublished": "2015-10-07T12:02:41Z",
+					  "image": [
+						"logo.jpg"
+					  ]
+					}
+				  </script>
+				  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+				  <!-- meta --> 
+				  <meta name="viewport" content="width=device-width,initial-scale=0.8">
+				  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+				  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				  <link href="https://fonts.googleapis.com/css?family=Poor Story" rel="stylesheet">
+				  <script src="./script/script.js"></script>
+			  </head>
+			  <body>
+				  <div id="background">
+					  <div id="animation"><span type="button" onclick="openMenu(this)" id="arrow">&#187</span></div>
+					  <div id="wrap">
+						  <div id="column">
+							  <div id="imgprofile"><img id="img" src="image/profile2.jpeg" alt="profile picture"></div>
+							  <div id="profile_block">
+								  <p class="profile"><i class="material-icons icon">person</i>Vishwas Paikra</p>
+								  <p class="profile"><i class="material-icons icon">cake</i>22 sept 1998</p>
+								  <p class="profile"><i class="material-icons icon">call</i>0123456789</p>
+								  <p class="profile"><i class="material-icons icon">email</i>vishwaspaikra007@gmail.com</p>
+								  <p class="profile"><i class="material-icons icon">home</i>hno-354 ward-8 tata line kohka</p>
+							  </div>
+						  </div>
+							  <div id="main">
+								  <svg id="logo" width="100%" height="100px" style="border-bottom:3px solid black; ">
+									  <polygon points="10,10 10,65 30,80 30,10" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke:black;"/>
+									  <ellipse cx="85" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>						
+									  <polygon points="180,0 130,45 155,84 195,70 195,50 175,40 185,60 155,60 175,20 195,30" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>	
+									  <ellipse cx="250" cy="45" rx="40" ry="40" style="fill:rgba(250,250,250,0.5); stroke-width:3px; stroke: black;"/>				
+								  </svg>
+								  <p id="para">
+									  hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
+								  </p>
+								  <h2>Some screenshots of some of my works</h2>
+								  <div class="myWork">
+									  <div class="myWorkBox" id="myWorkBox1">
+										  <img src="img/Screenshot%20(121).png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
+										  <a href="https://github.com/vishwaspaikra007"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+										  <p>
+											  This is my GitHub Account.<br>
+											  Please check out know to know more about my work.
+										  </p> 
+									  </div>
+									  <div class="myWorkBox" id="myWorkBox2">
+										  <img src="img/Screenshot%20(122).png" alt="flame game" class="imgWork" id="imgWork2" onclick="expand(this)">
+										  <a href="https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+										  <p>
+											  This is Flame Game.<br>
+											  Game to know about your future relationship.
+										  </p>
+									  </div>
+									  <div class="myWorkBox" id="myWorkBox3">
+										  <img src="img/Screenshot%20(123).png" alt="poem" class="imgWork" id="imgWork3" onclick="expand(this)">
+										  <a href="https://vishwaspaikra007.github.io/vishwas-paikra-poem/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a> 
+										  <p>
+											  Sometimes my soul emerges out as a Poet<br>
+											  Helping me to turn words into beautifully arrranged sentence causing it to rhyme.
+										  </p>
+									  </div>
+									  <div class="myWorkBox" id="myWorkBox4">
+										  <img src="img/Screenshot%20(125).png" alt="progress bar" class="imgWork" id="imgWork4" onclick="expand(this)">
+										  <a href="https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+										  <p>
+											  It's a site for documentation.<br>
+											  title and content side by side.
+										  </p>
+									  </div>
+								  </div>
+								  <div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
+							  </div>
+							  <div id="side">
+								  
+							  </div>
+						  
+						  <footer></footer>
+					  </div>
+				  </div>
+			  </body>
+			  </html>
+			  
