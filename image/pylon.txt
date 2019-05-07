@@ -1,0 +1,884 @@
+/******
+    Author :  Dinesh Barri
+    Language: CPP
+
+****/
+
+
+#include <bits/stdc++.h>
+//#include <intestypes.h>
+ using namespace std;
+#define pb push_back
+
+#define mp make_pair
+#define vi vector< int >
+#define vb vector< bool >
+#define pi 3.1415926535897932384626433832795l
+#define vl vector< ll >
+#define sf(n) scanf("%d",&n)
+#define sf2(n,m) scanf("%lld %lld",&(n),&(m))
+#define sf3(n,m,k) scanf("%lld %lld %lld",&(n),&(m),&(k))
+#define fi first
+#define sc second
+#define Sort(s)  sort(s.begin(),s.end())
+#define rsort(s) sort(s.rbegin(),s.rend())
+#define ll  long long int
+//setbase - cout << setbase (16); cout << 100 << endl; Printss 64
+//setfill -   cout << setfill ('x') << setw (5); cout << 77 << endl; printss xxx77
+//setprecision - cout << setprecision (14) << f << endl; Printss x.xxxx
+//cout.precision(x)  cout<<fixed<<plott;  // printss x digitss after decimal in plott
+#define ull unsigned long long int
+#define frn(i,a,b)  for( ll i=a;i<b;i++)
+#define fre(i,a,b)  for(int i=a;i<=b;i++)
+#define drn(i,a,b)  for(int i=a;i>=b;i--)
+#define pii pair< int,int >
+#define TRACE
+
+#ifdef TRACE
+#define trace(...) __f(#__VA_ARGS__, __VA_ARGS__)
+template <typename Arg1>
+void __f(const char* name, Arg1&& arg1){
+    cerr << name << " : " << arg1 << std::endl;
+}
+template <typename Arg1, typename... Args>
+void __f(const char* names, Arg1&& arg1, Args&&... args){
+    const char* comma = strchr(names + 1, ',');cerr.write(names, comma - names) << " : " << arg1<<" | ";__f(comma+1, args...);
+}
+#else
+#define trace(...)
+#endif
+#define pll pair< ll,ll >
+#define tri pair<int,pii>
+#define vvi vector<vi> 
+#define vii vector<pii>
+#define vll vector<pll>
+#define viii vector<tri>
+#define lt list<int>
+#define moddd (1000*1000*1000+9)
+#define pqueue priority_queue< int >
+#define pdqueue priority_queue< int,vi ,greater< int > >
+#define mt make_tuple
+#define lb lower_bound
+#define ub upper_bound
+#define ld long double
+#define eb emplace_back 
+#define dbg(x) { cout<< #x << ": " << (x) << endl; }
+#define dbg2(x,y) { cout<< #x << ": " << (x) << " , " << #y << ": " << (y) << endl; }
+/*
+  int a,b,c;
+  tie(a,b,c) = mt(1,2,3); // astr2ign
+  tie(a,b) = mt(b,a); // swap(a,b)
+
+  vector<pair<int,int>> v;
+  v.eb(a,b); // shorter and faster than pb(mp(a,b))
+*/
+#define tr(container, it) for(typeof(container.begin()) it = container.begin(); it != container.end(); it++)
+#define all(c) c.begin(), c.end()
+#define EPS 1e-9
+using u64 = uint64_t;
+
+
+
+const int INF = 0x3f3f3f3f;
+const ll inf = 1e18;
+const int modd = 1e9 + 7;
+const ll LL_INF = 0x3f3f3f3f3f3f3f3f;
+
+
+
+
+ll gcd(ll a, ll b) { return b == 0 ? a : gcd(b, a % b); }
+ll lcm(ll a, ll b) { return a * (b / gcd(a, b)); }
+ll Max(ll a, ll b) { return a > b ? a : b; }
+ll Min(ll a, ll b) { return a < b ? a : b; }
+ll add(ll x,ll y,ll mod) { x += y; if(x >= mod) x -= mod; return x;}
+ll sub(ll x,ll y,ll mod) { x -= y; if(x < 0) x += mod; return x;}
+ll mul(ll x,ll y,ll mod) { return (x * 1ll * y) % mod;}
+
+inline int max3(int a, int b, int c) {
+    return max(a, max(b, c));
+}
+
+
+
+                                                                                                         vvi selected;
+
+
+
+
+
+
+
+
+const int NN = 21;
+
+
+
+
+       
+
+
+
+                                                                                                                           int rre;
+
+
+       
+
+
+
+                                                                                                           int cre;
+
+
+
+
+
+                                                                                                 bool founddd[NN][NN];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                 vi diffx = {1,1,2,2,-1,-1,-2,-2,1,1,3,3,-1,-1,-3,-3};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                               vi diffy = {2,-2,1,-1,2,-2,1,-1,3,-3,1,-1,3,-3,1,-1};
+
+                                                                                                         bool phi(int i, int j, int coll)
+
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+              {
+   
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                   coll--;
+
+    
+
+
+
+
+
+    if(!coll)
+
+
+
+
+
+    {
+        
+
+
+
+
+
+
+
+                                                        return true;
+    
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                             for(int k=0;k<diffx.size();k++)
+
+
+
+
+
+
+
+
+
+
+{
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                           int repi = i+diffx[k];
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                    int repj = j+diffy[k];
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                         if(repi>=0 and repj>=0 and repi<rre and repj<cre and !founddd[repi][repj])
+
+
+
+
+
+
+
+
+
+                                                                                                   {
+            
+
+
+
+
+
+
+
+
+
+                                                                                      selected.pb({repi,repj});
+            
+
+
+
+
+
+
+
+
+
+founddd[i][j]=1;
+
+            
+
+
+
+            if(phi(repi,repj,coll))
+
+
+
+
+
+            {
+                
+
+
+                                                                                                                     return 1;
+            
+
+
+
+
+
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                        selected.pop_back();
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                          founddd[i][j]=0;
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+                                                                                           return false;
+
+
+
+
+
+
+
+}
+
+
+
+void solve(){
+
+
+
+
+
+
+
+
+
+
+
+
+                                      
+
+
+                                                             int test;
+   
+
+
+
+
+                                                                                              cin>>test;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                     fre(k,1,test)
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+                                                                                         cout<<"Case #"<<k<<": ";
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                               cin>> rre >> cre;
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                        selected.clear();
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+memset(founddd,false,sizeof(founddd));
+        
+
+
+
+
+
+
+
+                                                                                                               int coll = rre * cre;
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                  selected.pb({0,0});
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+founddd[0][0]=1;
+        
+
+
+
+
+                                               if(phi(0,0,coll))
+
+
+
+
+
+
+
+
+
+        {
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+                                                                                                                  cout<<"POSSIBLE"<<endl;
+            
+
+
+
+
+
+            for(auto xre:selected)
+
+            
+
+
+
+
+            {
+                
+
+
+
+
+
+
+
+
+                
+
+
+
+
+                                                                                                            cout<<xre[0]+1<<" "<<xre[1]+1<<endl;
+            
+
+
+
+
+
+
+
+
+
+
+            }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+        
+
+
+
+
+
+        else
+
+
+
+
+
+
+
+
+
+        {
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                           cout<<"IMPOSSIBLE"<<endl;
+       
+
+
+
+        }
+    
+
+
+
+    }
+
+
+
+
+}
+
+
+  
+int main(){
+
+
+
+solve();
+    
+  //cerr<<"Time elapsed"<<1.0*clock()/CLOCKS_PER_SEC<<"s\n";
+    return 0;
+}
+
+
+

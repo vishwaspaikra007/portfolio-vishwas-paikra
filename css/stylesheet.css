@@ -85,15 +85,9 @@ body
     box-sizing: border-box;
     margin: 20px;
     scroll-snap-align: center;
+    background: white;
 }   
-#slide1,#slide3,#slide5
-{
-    background: orange;
-}                      
-#slide2,#slide4,#slide6
-{
-    background: tomato;
-}                                          
+                                         
 #arrow
 { 
     height: 25px;
@@ -292,7 +286,10 @@ a
     }
 }
 
-
+::-webkit-scrollbar-track
+{
+    color: black;
+}
 
 
 
