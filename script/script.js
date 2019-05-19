@@ -14,7 +14,7 @@ function openMenu(ths) {
         ths.style.bottom = "-20%";
         ths.style.transform = "rotate(90deg)";
         ths.style.marginLeft = "96%";
-        menu.style.height = "50px";
+        menu.style.height = "38px";
         tog=!tog;
     }
 }
