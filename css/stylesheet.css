@@ -25,7 +25,7 @@ html
 {
     background:radial-gradient(rgb(40, 172, 172),orange,rgba(124,183,0,1),#88aaff,red,violet);
     background-size: 600% 600%;
-    animation-name: animate_html_background;
+    /* animation-name: animate_html_background; */
     animation-iteration-count: infinite;
     animation-duration: 20s;
     animation-timing-function: ease;
@@ -34,8 +34,8 @@ html
 @keyframes animate_html
 {
     0%{background-size: 100%;}
-    30%{background-size: 150%;}
-    70%{background-size: 150%;}
+    30%{background-size: 150%;background-position: center;}
+    70%{background-size: 150%;background-position: center;}
     100%{background-size: 100%;}
 }
 @keyframes animate_html_background
