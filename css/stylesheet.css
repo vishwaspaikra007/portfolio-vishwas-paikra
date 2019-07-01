@@ -18,13 +18,11 @@ html
     font-weight: 500;
     animation-name: animate_html;
     animation-duration: 8s;
-    animation-delay: 3s;
     animation-timing-function: ease-in-out;
 }
 html
 {
-    background:radial-gradient(rgb(40, 172, 172),orange,rgba(124,183,0,1),#88aaff,red,violet);
-    background-size: 600% 600%;
+    background:radial-gradient(rgb(40, 172, 172) 30%,orange 14%,rgba(124,183,0,1) 43%,#fff23e 53%,red 14%,red -20%);    background-size: 600% 600%;
     /* animation-name: animate_html_background; */
     animation-iteration-count: infinite;
     animation-duration: 20s;
@@ -34,8 +32,8 @@ html
 @keyframes animate_html
 {
     0%{background-size: 100%;}
-    30%{background-size: 150%;background-position: center;}
-    70%{background-size: 150%;background-position: center;}
+    30%{background-size: 250%;background-position: center;}
+    70%{background-size: 250%;background-position: center;}
     100%{background-size: 100%;}
 }
 @keyframes animate_html_background
