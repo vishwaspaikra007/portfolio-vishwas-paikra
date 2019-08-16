@@ -30,28 +30,28 @@ description : I'm currently a student who is trying his best
 	<meta name="viewport" content="width=device-width,initial-scale=0.8">
 	<meta name="theme-color" content="#068a8a" >
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/forScroll.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poor Story" rel="stylesheet">
 	<script src="./script/script.js"></script>
+	<script src="./script/scroll.js"></script>
 </head>
 <body>
 	<div id="background">
 		<div id="animation">
 			<div class="slideContainer">
 				<div class="mainSlide">
-				<div class="slides" id="slide1"></div>
-				<div class="slides" id="slide2"></div>
-				<div class="slides" id="slide3"></div>
-				<div class="slides" id="slide4"></div>
-				<div class="slides" id="slide5"></div>
-				<div class="slides" id="slide6"></div>
+					<div class="slides" id="slide1"></div>
+					<div class="slides" id="slide2"></div>
+					<div class="slides" id="slide3"></div>
+					<div class="slides" id="slide4"></div>
+					<div class="slides" id="slide5"></div>
+					<div class="slides" id="slide6"></div>
+				</div>
 			</div>
-			</div>
-			
-			
-			<span type="button" onclick="openMenu(this)" id="arrow">&#187</span></div>
-<div class="bgcolor"></div>
-		
+			<span type="button" onclick="openMenu(this)" id="arrow">&#187</span>
+		</div>
+		<div class="bgcolor"></div>
 		<div id="wrap">
 			<div id="column">
 				<div id="imgprofile"><img id="img" src="image/dp.jpeg" alt="profile picture"></div>
@@ -63,71 +63,87 @@ description : I'm currently a student who is trying his best
 					<p class="profile"><i class="material-icons icon">home</i>hno-354 ward-8 tata line kohka</p>
 				</div>
 			</div>
-				<div id="main">
+			<div id="main">
+				<div class="resistance">
 					<img id='welcome' src="./image/welcomeNbg.png" alt="welcome">
 					<p id="para">
 						hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
 					</p>
 					<h2>Some screenshots of some of my works</h2>
-					<div class="myWork">
-						<div class="myWorkBox" id="myWorkBox8">
-								<img src="img/todo.png" alt="TODO Application" class="imgWork" id="imgWork1" onclick="expand(this)">
-								<a href="https://vishwaspaikra007.github.io/firebase-CRUD-TODO-redesign/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-								<p>
-									Todo Application<br>
-									work is still going on.
-								</p> 
-							</div>
-						<div class="myWorkBox" id="myWorkBox1">
-							<img src="img/Screenshot from 2019-04-08 11-27-28.png" alt="TicTacToe" class="imgWork" id="imgWork6" onclick="expand(this)">
-							<a href="https://vishwaspaikra007.github.io/tic-tac-toe/" target="blank" ><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+				</div>
+				<div class="myWork">
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox8">
+							<img src="img/todo.png" alt="TODO Application" class="imgWork" id="imgWork1" onclick="expand(this)">
+							<a href="https://vishwaspaikra007.github.io/firebase-CRUD-TODO-redesign/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
 							<p>
-								The first game TicTacToe.<br>
-								Play and enjoy and please suggest any improvement for it.<br>
-								mail me.
-							</p>
-						</div>
-						<div class="myWorkBox" id="myWorkBox2">
-							<img src="img/Screenshot%20(122).png" alt="flame game" class="imgWork" id="imgWork2" onclick="expand(this)">
-							<a href="https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-							<p>
-								This is Flame Game.<br>
-								Game to know about your future relationship.
-							</p>
-						</div>
-						<div class="myWorkBox" id="myWorkBox7">
-							<img src="img/food.png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
-							<a href="https://food-service-844e8.web.app/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-							<p>
-								A food service app.<br>
+								Todo Application<br>
 								work is still going on.
 							</p> 
 						</div>
-
-						<div class="myWorkBox" id="myWorkBox3">
-							<img src="img/Screenshot%20(123).png" alt="poem" class="imgWork" id="imgWork3" onclick="expand(this)">
-							<a href="https://vishwaspaikra007.github.io/vishwas-paikra-poem/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a> 
-							<p>
-								Sometimes my soul emerges out as a Poet<br>
-								Helping me to turn words into beautifully arrranged sentence causing it to rhyme.
-							</p>
-						</div>
-						<div class="myWorkBox" id="myWorkBox4">
-							<img src="img/Screenshot from 2019-04-08 11-25-32.png" alt="Let's play the game" class="imgWork" id="imgWork5" onclick="expand(this)">
-							<a href="https://vishwaspaikra007.github.io/lets-play-the-game-vishwas-paikra/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-							<p>
-								Just playing around with<br>
-								Let's play the game.
-							</p>
-						</div>
-						<div class="myWorkBox" id="myWorkBox5">
-						<img src="img/Screenshot%20(125).png" alt="progress bar" class="imgWork" id="imgWork4" onclick="expand(this)">
-						<a href="https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
-						<p>
-							It's a site for documentation.<br>
-							title and content side by side.
-						</p>	
 					</div>
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox1">
+						<img src="img/Screenshot from 2019-04-08 11-27-28.png" alt="TicTacToe" class="imgWork" id="imgWork6" onclick="expand(this)">
+						<a href="https://vishwaspaikra007.github.io/tic-tac-toe/" target="blank" ><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+						<p>
+							The first game TicTacToe.<br>
+							Play and enjoy and please suggest any improvement for it.<br>
+							mail me.
+						</p>
+					</div>
+					</div>
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox2">
+						<img src="img/Screenshot%20(122).png" alt="flame game" class="imgWork" id="imgWork2" onclick="expand(this)">
+						<a href="https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+						<p>
+							This is Flame Game.<br>
+							Game to know about your future relationship.
+						</p>
+					</div>
+					</div>						
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox7">
+						<img src="img/food.png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
+						<a href="https://food-service-844e8.web.app/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+						<p>
+							A food service app.<br>
+							work is still going on.
+						</p> 
+					</div>
+					</div>
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox3">
+						<img src="img/Screenshot%20(123).png" alt="poem" class="imgWork" id="imgWork3" onclick="expand(this)">
+						<a href="https://vishwaspaikra007.github.io/vishwas-paikra-poem/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a> 
+						<p>
+							Sometimes my soul emerges out as a Poet<br>
+							Helping me to turn words into beautifully arrranged sentence causing it to rhyme.
+						</p>
+					</div>
+					</div>
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox4">
+						<img src="img/Screenshot from 2019-04-08 11-25-32.png" alt="Let's play the game" class="imgWork" id="imgWork5" onclick="expand(this)">
+						<a href="https://vishwaspaikra007.github.io/lets-play-the-game-vishwas-paikra/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+						<p>
+							Just playing around with<br>
+							Let's play the game.
+						</p>
+					</div>
+					</div>
+					<div class="animationContainerForContent" id="content1">
+					<div class="myWorkBox" id="myWorkBox5">
+					<img src="img/Screenshot%20(125).png" alt="progress bar" class="imgWork" id="imgWork4" onclick="expand(this)">
+					<a href="https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
+					<p>
+						It's a site for documentation.<br>
+						title and content side by side.
+					</p>	
+					</div>
+					</div>
+					<div class="animationContainerForContent" id="content1">
 					<div class="myWorkBox" id="myWorkBox6">
 						<img src="img/Screenshot%20(121).png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
 						<a href="https://github.com/vishwaspaikra007" target="blank"><h3 class="profile pTag" >Go to webpage by cliking this link</h3></a>
@@ -136,15 +152,11 @@ description : I'm currently a student who is trying his best
 							Please check out now to know more about my work.
 						</p> 
 					</div>
-					
 					</div>
-					<div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
 				</div>
-				<div id="side">
-					
-				</div>
-			
-			<footer></footer>
+				<div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
+			</div>
+			<div id="side"></div>
 		</div>
 	</div>
 </body>
