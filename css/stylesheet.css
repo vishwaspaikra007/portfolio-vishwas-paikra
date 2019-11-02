@@ -24,7 +24,7 @@ html
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    background:radial-gradient(#28acac 80%,black -14%);
+    background:radial-gradient(red 80%,orange -14%);
     background-size: 600px 600px;
     background-repeat: repeat;
 }
@@ -282,11 +282,12 @@ a
     text-decoration: none;
     color: inherit;
 }
-@media only screen and (max-width: 1080px)
+@media only screen and (max-width: 1081px)
 {
     #wrap
     {
         grid-template-columns: auto;
+        width: 100%;
     }
     .myWork
     {

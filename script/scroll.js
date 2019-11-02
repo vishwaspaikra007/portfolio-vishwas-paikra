@@ -2,7 +2,7 @@ var scrollpixel;
 var height;
 var scrollpercentage;
 var cnt = 0;
-var fCnt = 8;
+var fCnt = 11;
 var allow = false;
 var resPos=0;
 var loop=1;
@@ -13,17 +13,6 @@ var resistance = document.querySelector('.resistance');
 var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 var column = document.querySelector('#column');
 window.onscroll = function() {scroll()};
-
-// window.onload = function() {
-// var animationContainerForContent = document.querySelectorAll('.animationContainerForContent');
-
-//    for(let i=0;i<8;i++) {
-//     var style = animationContainerForContent[i].currentStyle 
-//                     || window.getComputedStyle(animationContainerForContent[i]);
-//     console.log(i + "\n");
-//     console.log(style.marginTop);
-//    }
-// }
 
 function scroll() {
 var animationContainerForContent = document.querySelectorAll('.animationContainerForContent');
@@ -39,11 +28,11 @@ console.log(" a "+scrollpixel+" b "+viewPortHeight+" c "+resPos + " d "+
                 +" f "+ animationContainerForContent[0].clientHeight/2);
 var offSetHeight = animationContainerForContent[0].clientHeight;
 if(cnt<fCnt) {
-    if(html.clientWidth >= 1080)
+    if(html.clientWidth >= 1081)
         loop=2;
     else
         loop=1;
-    if((scrollpixel + viewPortHeight) > 
+    if((scrollpixel + viewPortHeight + 200) > 
             resPos + resistance.clientHeight + (offSetHeight*cnt/loop) + offSetHeight/2) {
     while(loop--) {
         animationContainerForContent[cnt].style.marginTop = "0px";
