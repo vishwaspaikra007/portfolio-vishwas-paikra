@@ -19,9 +19,9 @@ function openMenu(ths) {
     }
 }
 function expand(a) {
-    var fuli = document.getElementById('fullImage1');
-    fuli.style.display = "block";
-    fuli.innerHTML = "<img src='" + a.src + "'>";
+    // var fuli = document.getElementById('fullImage1');
+    // fuli.style.display = "block";
+    // fuli.innerHTML = "<img src='" + a.src + "'>";
 }
 function abort(b) {
     b.style.display = "none";
