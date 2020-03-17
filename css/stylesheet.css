@@ -13,6 +13,8 @@
 * {
     box-sizing: border-box;
     transition: 500ms;
+    margin: 0;
+    padding: 0;
 }
 html
 {
@@ -25,7 +27,7 @@ html
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    background:radial-gradient(red 80%,orange -14%);
+    background:radial-gradient(#000000 80%,#308888 -14%);
     background-size: 600px 600px;
     background-repeat: repeat;
 }
@@ -149,7 +151,7 @@ body
     color: white;
 
 } #welcome {
-    width:90%;
+    width:80vmin;
     margin:auto;
     display: block;
     background: radial-gradient(cyan 20%,transparent 20%);
@@ -165,34 +167,84 @@ body
     60%{background-size: 150% 150;background-position: 70% 10%;}
     100%{background-size: 100% 100%;background-position: right;}
 }
-#column
-{ 
-    box-sizing: border-box;
+#columnContainer {
     background:rgba(250,250,250,0.2);
     box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 0px 4px 20px rgba(0,0,0,0.4);
     border: 4px solid white;
-    background-image: url('../image/dp.jpeg');
     background-size: cover;
-    background-position: right;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
 }
-#profile_block
+#column
+{ 
+    margin: 10px;
+    box-sizing: border-box;  
+    background-position: right;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 20% 20% 20% 20% 20%; */
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* height: calc(100vh - 20px); */
+}
+.profile_block
 {
     box-sizing: border-box;
     padding: 10px;
     background: #088;
     border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0 10px 10px 0;
+}
+.profile_block::-webkit-scrollbar-track {
+    background: transparent;
 }
 .profile
 {
     background: rgba(0,0,0,0.2);
-    width: 100%;
+    /* width: max-content; */
     box-sizing: border-box;
     padding: 5px;
     border-radius: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+.profileImage, .profileImageColored {
+    background-image: url('../image/coloreddp.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+} .profileImageColored {
+    background-image: url('../image/b&wdp.jpeg')
+} .profileImage:hover {
+    filter: none;
+} 
+
+#profileImg {
+    grid-row: 1 / span 5;
+}
+#profileInfo {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+#aim {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+#education{
+    grid-row: 4 / span 3;
+    grid-column: 3;
+} #training  {
+    grid-row: 4 / span 3;
+    grid-column: 4;
+} #skills {
+    grid-column: 2;
+    grid-row: 3 / span 3;
+} #emptyBlock {
+    grid-row: 3;
+    grid-column: 3 / span 2;
 }
 #imgprofile
 {
@@ -238,7 +290,7 @@ body
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-    padding: 10px;
+    margin-top: 10px;
     box-sizing: border-box;
 }
 .myWorkBox
@@ -254,9 +306,10 @@ body
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* clip-path: polygon(0% 10%, 10% 0%, 90% 0%, 100% 10%,100% 90%, 90% 100%, 10% 100%, 0% 90%); */
 }
 .myWorkBox:hover {
-    transform: scale(1.05)
+    box-shadow: 0 0 14px 2px #088;
 }
 .imgWork
 {
@@ -290,12 +343,13 @@ body
 #para {
     padding: 0 50px;
     text-align: center;
-    font-size: 60px;
+    font-size: 5vw;
 } .resistance > h2 {
     background: #088;
     display: inline-block;
     border-radius: 20px;
     padding: 10px;
+    margin: 10px 0;
 } #para > a {
     text-shadow: 2px 0 0 #088;
 }
@@ -313,21 +367,85 @@ body
 }
 .myWorkBox > p {
     color: #088;
-
+    background: #0882;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
 }
 a
 {
     text-decoration: none;
     color: inherit;
 }
-@media only screen and (max-width: 1081px)
+@media only screen and (max-width: 1080px)
 {
-    #wrap
-    {
-        grid-template-columns: auto;
-        width: 100%;
+    #column {
+        grid-template-columns: 25% 25% 25% 25%;
+        /* grid-template-rows: 20% 20% 20% 20% 20% 20% 20% 20%; */
+    }
+    #profileImg {
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 2;
+    }
+    #skills {
+        grid-row: 4 / span 2;
+        grid-column: 1 / span 2;
+    }
+    #aim {
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 3;
+    }
+    #profileInfo {
+        grid-row: 6 / span 3;
+        grid-column: 1 / span 2;
+    }
+    #education{
+        grid-row: 8 / span 2;
+        grid-column: 3 / span 2;
+    } #training  {
+        grid-row: 5 / span 3;
+        grid-column: 3 / span 2;
+    } #emptyBlock {
+        grid-row: 4;
+        grid-column: 3 / span 2;
     }
 }
+@media only screen and (max-width: 600px)
+{
+    #column {
+        grid-template-columns: auto;
+    }
+    #profileImg {
+        height: 50vh;
+        grid-row: 1;
+        grid-column: auto;
+    }
+    #skills {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    #aim {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    #profileInfo {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    #education{
+        grid-row: auto;
+        grid-column: auto;
+    } #training  {
+        grid-row: auto;
+        grid-column: auto;
+    } #emptyBlock {
+        grid-row: 2;
+        grid-column: auto;
+    }
+}
+
+
+
 ::-webkit-scrollbar-track
 {
     color: black;
