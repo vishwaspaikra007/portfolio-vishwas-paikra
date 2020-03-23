@@ -1,0 +1,19 @@
+.btnCircularScaleA {
+    overflow: hidden;
+    position: relative;
+} .circularScaleA {
+    width: 100px;
+    height: 100px;
+    background-color: #088;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+} .btnCircularScaleA > .circularScaleAafter {
+    transform: scale(10);
+    opacity: 0;
+    transition: 1s;
+} .btnCircularScaleA > .circularScaleAstart {
+    transition: 0s;
+    transform: scale(0);
+    opacity: 1;
+}

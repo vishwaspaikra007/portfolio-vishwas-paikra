@@ -301,12 +301,13 @@ body
     padding: 10px;
     color: black;
     box-shadow: 0 0 14px -4px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     /* clip-path: polygon(0% 10%, 10% 0%, 90% 0%, 100% 10%,100% 90%, 90% 100%, 10% 100%, 0% 90%); */
+}
+.myWorkBox > * {
+    position: relative;
+    z-index: 1;
 }
 .myWorkBox:hover {
     box-shadow: 0 0 14px 2px #088;
@@ -376,6 +377,14 @@ a
 {
     text-decoration: none;
     color: inherit;
+}
+.playGround {
+    background-color: #00000066;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
 }
 @media only screen and (max-width: 1080px)
 {
@@ -461,5 +470,13 @@ a
     opacity: 0.2;
 }
 
-
+@media (prefers-color-scheme: dark)
+{ 
+    .myWorkBox {
+        background: transparent;
+    }
+    .myWorkBox p, #para {
+        color: wheat;
+    } 
+}
 
