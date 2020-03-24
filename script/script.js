@@ -26,3 +26,8 @@ function expand(a) {
 function abort(b) {
     b.style.display = "none";
 }
+function openSite(url) {
+    setTimeout(() => {
+        window.open(url);
+    }, 200);
+}

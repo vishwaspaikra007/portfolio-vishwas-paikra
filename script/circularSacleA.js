@@ -7,9 +7,14 @@ for(let i=0;i<btn.length;i++)
     let cirscabtnA = document.createElement("div");
     cirscabtnA.classList.add('circularScaleA');
     cirscabtnA.classList.add('circularScaleAafter');
-
     btn[i].prepend(cirscabtnA);
-    btn[i].setAttribute('onclick', 'btncirscabtnAFunc(this,event)');
+
+    var functions = 'btncirscabtnAFunc(this,event);';
+    let userFunctions = btn[i].getAttribute('onclick');
+    if(userFunctions) {
+        functions += ` ${userFunctions}`;
+    }
+    btn[i].setAttribute('onclick', functions);
 }
 
 function btncirscabtnAFunc(ths, e) {

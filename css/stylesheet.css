@@ -220,7 +220,11 @@ body
     background-image: url('../image/b&wdp.jpeg')
 } .profileImage:hover {
     filter: none;
-} 
+} .profileImage > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 #profileImg {
     grid-row: 1 / span 5;
@@ -450,6 +454,8 @@ a
     } #emptyBlock {
         grid-row: 2;
         grid-column: auto;
+    } #para {
+        padding: 0;
     }
 }
 
