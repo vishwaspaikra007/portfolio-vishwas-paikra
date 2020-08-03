@@ -28,6 +28,6 @@ function abort(b) {
 }
 function openSite(url) {
     setTimeout(() => {
-        window.open(url);
-    }, 200);
+        window.open(url, 'popup', 'width:320, height:300');
+    }, 500);
 }

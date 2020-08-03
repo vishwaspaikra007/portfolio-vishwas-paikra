@@ -43,35 +43,16 @@ description : I'm currently a student who is trying his best
 		
 	</div>
 	<div id="background">
-		<!-- <div id="animation">
-			<div class="slideContainer">
-				<div class="mainSlide">
-					<div class="slides" id="slide1"></div>
-					<div class="slides" id="slide2"></div>
-					<div class="slides" id="slide3"></div>
-					<div class="slides" id="slide4"></div>
-					<div class="slides" id="slide5"></div>
-					<div class="slides" id="slide6"></div>
-				</div>
-			</div>
-			<span type="button" onclick="openMenu(this)" id="arrow">&#187</span>
-		</div> -->
 		<div class="bgcolor"></div>
 		<div id="wrap">
 			<div id="columnContainer">
 			<div id="column">
-				<div class="profile_block" id="profileInfo">
-					<h1 class="profile">Personal Info</h1>
-					<p class="profile"><i class="material-icons icon">person</i>Vishwas Paikra</p>
-					<p class="profile"><i class="material-icons icon">cake</i>22 sep 1998</p>
-					<p class="profile"><i class="material-icons icon">call</i>0123456789</p>
-					<p class="profile"><i class="material-icons icon">email</i>vishwaspaikra007@gmail.com</p>
-					<p class="profile"><i class="material-icons icon">home</i>raipur chhattisgarh India</p>
-				</div>
 
 				<div class="profile_block" id="skills">
 					<h1 class="profile">Skills</h1>
+					<p class="profile">Competitive Programming</p>
 					<p class="profile">NodeJs</p>
+					<p class="profile">React Js</p>
 					<p class="profile">Angular</p>
 					<p class="profile">Angular Js</p>
 					<p class="profile">Mongo DB</p>
@@ -82,6 +63,21 @@ description : I'm currently a student who is trying his best
 					<p class="profile">C/C++</p>
 					<p class="profile">Python</p>
 
+				</div>
+
+				<div class="profile_block" id="profileImg">
+					<div class="profileImage">
+						<img src="./image/coloreddp.jpeg" alt="Vishwas Paikra from vishwaspaikra007.github.io">
+					</div>
+				</div>
+
+				<div class="profile_block" id="profileInfo">
+					<h1 class="profile">Personal Info</h1>
+					<p class="profile"><i class="material-icons icon">person </i>Vishwas Paikra</p>
+					<p class="profile" id="years"><i class="material-icons icon" >cake </i></p>
+					<p class="profile"><i class="material-icons icon">call </i>0123456789</p>
+					<p class="profile"><i class="material-icons icon">email </i>vishwaspaikra007@gmail.com</p>
+					<p class="profile"><i class="material-icons icon">home </i>raipur chhattisgarh India</p>
 				</div>
 
 				<div class="profile_block" id="education">
@@ -98,12 +94,10 @@ description : I'm currently a student who is trying his best
 					<p class="profile">angular framwork from angular.io</p>
 				</div>
 
-				<div class="profile_block" id="profileImg">
-					<div class="profileImage">
-						<img src="./image/coloreddp.jpeg" alt="profile picture of vishwas paikra for portfolio">
-					</div>
-				</div>
 				<div class="profile_block" id="aim">
+					<h2 class="profile">Achievements</h2>
+					<p class="profile">3 *** Competitive Programmer Codechef</p>
+					<br>
 					<h2 class="profile">Aim</h2>
 					<p class="profile">
 						<b>"</b>Well your company is looking for a skilled programmer and experienced developer to grow your business and help your company stand out from the competition.I 
@@ -125,11 +119,6 @@ description : I'm currently a student who is trying his best
 			</div>
 			<div id="main">
 				<div class="resistance">
-					<img id='welcome' src="./image/welcomeNbg.png" alt="welcome">
-					<p id="para">
-						hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
-						<a  href="#myWorkBox6"><b>My Github profile link in the bottom.</b></a>
-					</p>
 					<h2>Some screenshots of some of my works</h2>
 				</div>
 				<div class="myWork">
@@ -274,9 +263,30 @@ description : I'm currently a student who is trying his best
 					</div>
 				</div>
 				<div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
+				<div class="resistance">
+					<img id='welcome' src="./image/welcomeNbg.png" alt="welcome text">
+					<p id="para">
+						hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
+						<a  href="#myWorkBox6"><b>My Github profile link.</b></a>
+					</p>
+				</div>
 			</div>
 			<div id="side"></div>
 		</div>
 	</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+	function setYears(e) {
+			let years = (new Date).getFullYear() - 1998
+			document.querySelector('#years').append(years + " years old")
+	}
+	setYears()
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', '', { 'optimize_id': 'GTM-PH759TM'});
+</script>
 </body>
 </html>

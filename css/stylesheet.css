@@ -22,124 +22,15 @@ html
     height: 100%;
     font-size: 20px;
     font-weight: 500;
-    /* animation-name: animate_html; */
-    animation-duration: 50s;
-    animation-delay: 0s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
     background:radial-gradient(#000000 80%,#308888 -14%);
     background-size: 600px 600px;
     background-repeat: repeat;
 }
 body {
     overflow-x: hidden!important;
-}
-
-@keyframes animate_html
-{
-    0%{background-size: 600px 600px;}
-    50%{background-size: 500px 500px;background-position: center;}
-    100%{background-size: 600px 600px;}
-}
-@keyframes animate_html_background
-{
-    0%{background-position: top left}
-    25%{background-position: bottom right}
-    50%{background-position: top right}
-    55%{background-position: bottom left}
-    100%{background-position: top left}
-}
-body
-{
     margin: auto;
     width:100%;
     height: 100%;
-}
-#animation
-{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    margin-top: 10px;
-    padding-top: 10px;
-    width: 100%;
-    height: 38px;
-    background: rgba(200,200,200,0.5);
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 0px 4px 20px rgba(0,0,0,0.4);
-    transition: 0.5s;
-    /* animation-name: animate_animation; */
-    animation-duration: 500ms;
-    animation-delay: 0s;
-    animation-timing-function: ease-in-out;
-    border-left: 10px solid #88aaff;
-    border:4px solid white;
-    border-bottom: none;
-}
-.mainSlide
-{
-    width: 600%;
-    height: 100%;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-}
-@keyframes animate_animation
-{
-    0%{height: 38px;width:100%}
-    30%{height: 450px;width:100%;border-color: transparent;}
-    70%{height: 450px;width:100%;border-color: transparent;}
-    100%{height: 38px;width:100%}
-} 
-.slideContainer
-{
-    overflow-y: hidden;
-    width: 100%;
-    height: 100%;
-    scroll-snap-type: x mandatory;
-}
-.slides
-{
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 20px;
-    scroll-snap-align: center;
-    background: white;
-}   
-                                         
-#arrow
-{ 
-    height: 25px;
-    width: 25px;
-    box-sizing: border-box;
-    background-color: transparent;
-    bottom:-20%;
-    border-style: none;
-    padding: 0px; 
-    position: absolute;
-    font-size: 50px;
-    color: #88aaff;;
-    transform: rotate(90deg);
-    margin-left: 96%;
-    margin-bottom: 18px;
-    transition: 1s;
-    cursor: pointer;
-    animation-name: animate_arrow;
-    animation-duration: 8s;
-    animation-delay: 3s;
-    animation-timing-function: ease-in-out;
-
-}
-@keyframes animate_arrow
-{
-    0%{transform: rotate(90deg);margin-left: 96%;bottom:-20%}		
-    5%{transform: rotate(180deg);margin-left: 96%;bottom:0%;color: black}
-    20%{transform: rotate(180deg);margin-left: 0%;bottom:0%;color: black}
-    45%{transform: rotate(180deg);margin-left: 0%;bottom:0%;color: black} 
-    50%{transform: rotate(270deg);margin-left: 0%;bottom:0%;color: black}
-    55%{transform: rotate(360deg);margin-left: 0%;bottom:0%;color: black} 
-    80%{transform: rotate(360deg);margin-left: 0%;bottom:0%;color: black} 
-    95%{transform: rotate(360deg);margin-left: 96%;bottom:0%;}
-    100%{transform: rotate(440deg);margin-left: 96%;bottom:-20%;}  
 }
 #wrap
 {
@@ -180,11 +71,9 @@ body
     background-position: right;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    /* grid-template-rows: 20% 20% 20% 20% 20%; */
     padding: 10px;
     overflow: hidden;
     overflow-y: scroll;
-    /* height: calc(100vh - 20px); */
 }
 .profile_block
 {
@@ -208,6 +97,15 @@ body
     border-radius: 10px;
     margin: 10px 0;
     display: inline-block;
+    cursor: pointer;
+}
+a .profile:active {
+    transform: scale(0.9);
+}
+.profile_block .profile:hover {
+    transform: scale(0.95);
+    background-color: rgba(255, 255, 255, 0.541);
+    color: rgb(0, 80, 80);
 }
 .profileImage, .profileImageColored {
     background-image: url('../image/coloreddp.jpeg');
@@ -229,7 +127,7 @@ body
 #profileImg {
     grid-row: 1 / span 5;
 }
-#profileInfo {
+#skills {
     grid-row: 1 / span 2;
     grid-column: 2;
 }
@@ -243,7 +141,7 @@ body
 } #training  {
     grid-row: 4 / span 3;
     grid-column: 4;
-} #skills {
+} #profileInfo {
     grid-column: 2;
     grid-row: 3 / span 3;
 } #emptyBlock {
@@ -307,6 +205,7 @@ body
     box-shadow: 0 0 14px -4px;
     align-items: center;
     text-align: center;
+    transition: 100ms;
     /* clip-path: polygon(0% 10%, 10% 0%, 90% 0%, 100% 10%,100% 90%, 90% 100%, 10% 100%, 0% 90%); */
 }
 .myWorkBox > * {
@@ -357,6 +256,10 @@ body
     margin: 10px 0;
 } #para > a {
     text-shadow: 2px 0 0 #088;
+    zoom: 1.1;
+}
+a b:hover {
+    text-shadow: 0 0 16px
 }
 .pTag
 {
@@ -400,11 +303,11 @@ a
         grid-row: 1 / span 3;
         grid-column: 1 / span 2;
     }
-    #skills {
+    #aim {
         grid-row: 4 / span 2;
         grid-column: 1 / span 2;
     }
-    #aim {
+    #skills {
         grid-column: 3 / span 2;
         grid-row: 1 / span 3;
     }
@@ -439,7 +342,7 @@ a
     }
     #aim {
         grid-column: auto;
-        grid-row: auto;
+        grid-row: 4;
     }
     #profileInfo {
         grid-row: auto;
