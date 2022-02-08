@@ -20,11 +20,15 @@ html
 {
     width: 100%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     background:radial-gradient(#000000 80%,#308888 -14%);
     background-size: 600px 600px;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-image: url('../image/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 body {
     overflow-x: hidden!important;
@@ -45,7 +49,9 @@ body {
     width:80vmin;
     margin:auto;
     display: block;
-    background: radial-gradient(cyan 20%,transparent 20%);
+    /* background: radial-gradient(cyan 20%,transparent 20%); */
+    background-image: url('../image/ufo.png');
+    background-repeat: no-repeat;
     background-position: left;
     animation-name: animate_welcome;
     animation-duration: 5s;
@@ -54,8 +60,8 @@ body {
 } @keyframes animate_welcome
 {
     0%{background-size: 100% 100%;background-position: left;}
-    40%{background-size: 150% 150%;background-position: 70% 50%;}
-    60%{background-size: 150% 150;background-position: 70% 10%;}
+    40%{background-size: 10% 10%;background-position: 70% 50%;}
+    60%{background-size: 10% 10;background-position: 70% 10%;}
     100%{background-size: 100% 100%;background-position: right;}
 }
 #columnContainer {
@@ -63,6 +69,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.4), 0px 4px 20px rgba(0,0,0,0.4);
     border: 4px solid white;
     background-size: cover;
+    backdrop-filter: blur(3px);
 }
 #column
 { 
@@ -74,6 +81,13 @@ body {
     padding: 10px;
     overflow: hidden;
     overflow-y: scroll;
+}
+#columnContainer h2 {
+    width: -webkit-fill-available;
+    text-align: center;
+}
+i {
+    margin-top: -6px;
 }
 .profile_block
 {
@@ -95,7 +109,7 @@ body {
     box-sizing: border-box;
     padding: 5px;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 3px 0;
     display: inline-block;
     cursor: pointer;
 }
@@ -309,17 +323,17 @@ a
     }
     #skills {
         grid-column: 3 / span 2;
-        grid-row: 1 / span 3;
+        grid-row: 1 / span 1;
     }
     #profileInfo {
         grid-row: 6 / span 3;
         grid-column: 1 / span 2;
     }
     #education{
-        grid-row: 8 / span 2;
+        grid-row: 6 / span 3;
         grid-column: 3 / span 2;
     } #training  {
-        grid-row: 5 / span 3;
+        grid-row: 2 / span 2;
         grid-column: 3 / span 2;
     } #emptyBlock {
         grid-row: 4;
@@ -369,14 +383,14 @@ a
     color: black;
 }
 .bgcolor {
-    position: absolute;
+    /* position: absolute;
     top: 0px;
     width: 100%;
     height: 100%;
     background-image: url(../image/welcomeNbg.png);
     background-repeat: repeat;
     background-size: 50%;
-    opacity: 0.2;
+    opacity: 0.2; */
 }
 
 @media (prefers-color-scheme: dark)
