@@ -6,292 +6,555 @@ description : I'm currently a student who is trying his best
               to learn every possible productive stuffs around him -->
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Vishwas Paikra</title>
-	<meta charset="utf-8">
-	<script async src="https://cdn.ampproject.org/v0.js"></script>
-	<title>Hello, AMPs</title>
-	<link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
-	<link rel="shortcut icon" type="image/x-icon" href="/icon.ico">
-	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-	<script type="application/ld+json">
-	{
-		"@context": "http://schema.org",
-		"@type": "NewsArticle",
-		"headline": "Open-source framework for publishing content",
-		"datePublished": "2015-10-07T12:02:41Z",
-		"image": [
-		"logo.jpg"
-		]
-	}
-	</script>
-	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-	<!-- meta --> 
-	<meta name="viewport" content="width=device-width,initial-scale=0.8">
-	<meta name="theme-color" content="#068a8a" >
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link rel="stylesheet" href="css/floatingWidget.css">
-	<link rel="stylesheet" type="text/css" href="css/forScroll.css">
-	<link rel="stylesheet" href="./css/circularScaleA.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poor Story" rel="stylesheet">
-	<script src="./script/script.js"></script>
-	<script src="./script/scroll.js"></script>
-	<script src="./script/circularSacleA.js" defer></script>
-	<!-- <script src="./script/floatingWidget.js" defer></script> -->
-</head>
-<body>
-	<div class="playGround">
-		
-	</div>
-	<div id="background">
-		<div class="bgcolor"></div>
-		<div id="wrap">
-			<div id="columnContainer">
-			<div id="column">
+  <head>
+    <title>Vishwas Paikra</title>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link
+      rel="canonical"
+      href="http://example.ampproject.org/article-metadata.html"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/icon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": ["logo.jpg"]
+      }
+    </script>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width,initial-scale=0.8" />
+    <meta name="theme-color" content="#068a8a" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/floatingWidget.css" />
+    <link rel="stylesheet" type="text/css" href="css/forScroll.css" />
+    <link rel="stylesheet" href="./css/circularScaleA.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poor Story"
+      rel="stylesheet"
+    />
+    <script src="./script/script.js"></script>
+    <script src="./script/scroll.js"></script>
+    <script src="./script/circularSacleA.js" defer></script>
+    <!-- <script src="./script/floatingWidget.js" defer></script> -->
+  </head>
+  <body>
+    <!-- <div class="playGround"></div> -->
+    <div id="background">
+      <div class="bgcolor"></div>
+      <div id="wrap">
+        <div id="columnContainer">
+          <div id="column">
+            <div class="profile_block" id="skills">
+              <h2 class="profile">Skills</h2>
+              <p class="profile">Competitive Programming</p>
+              <p class="profile">MERN Stack</p>
+              <p class="profile">MEAN Stack</p>
+              <p class="profile">Docker</p>
+              <p class="profile">Firebase</p>
+              <p class="profile">FFmpeg</p>
+              <p class="profile">Jimp</p>
+              <p class="profile">Passport.js</p>
+              <p class="profile">NodeJs</p>
+              <p class="profile">React Js</p>
+              <p class="profile">Angular</p>
+              <p class="profile">Angular Js</p>
+              <p class="profile">Mongo DB</p>
+              <p class="profile">HTML</p>
+              <p class="profile">Css</p>
+              <p class="profile">Javascript</p>
+              <p class="profile">C/C++</p>
+              <p class="profile">Python</p>
+            </div>
 
-				<div class="profile_block" id="skills">
-					<h2 class="profile">Skills</h2>
-					<p class="profile">Competitive Programming</p>
-					<p class="profile">NodeJs</p>
-					<p class="profile">React Js</p>
-					<p class="profile">Angular</p>
-					<p class="profile">Angular Js</p>
-					<p class="profile">Mongo DB</p>
-					<p class="profile">Firebase firestore</p>
-					<p class="profile">HTML</p>
-					<p class="profile">Css</p>
-					<p class="profile">Javascript</p>
-					<p class="profile">C/C++</p>
-					<p class="profile">Python</p>
+            <div class="profile_block" id="profileImg">
+              <div class="profileImage">
+                <img
+                  src="./image/coloreddp.jpeg"
+                  alt="Vishwas Paikra from vishwaspaikra007.github.io"
+                />
+              </div>
+            </div>
 
-				</div>
+            <div class="profile_block" id="profileInfo">
+              <h2 class="profile">Personal Info</h2>
+              <p class="profile">
+                <i class="material-icons icon">person </i>Vishwas Paikra
+              </p>
+              <p class="profile" id="years">
+                <i class="material-icons icon">cake </i>
+              </p>
+              <p class="profile">
+                <i class="material-icons icon">call </i>0123456789
+              </p>
+              <p class="profile">
+                <i class="material-icons icon">email </i
+                >vishwaspaikra007@gmail.com
+              </p>
+              <p class="profile">
+                <i class="material-icons icon">home </i>raipur chhattisgarh
+                India
+              </p>
+            </div>
 
-				<div class="profile_block" id="profileImg">
-					<div class="profileImage">
-						<img src="./image/coloreddp.jpeg" alt="Vishwas Paikra from vishwaspaikra007.github.io">
-					</div>
-				</div>
+            <div class="profile_block" id="education">
+              <h2 class="profile">Education</h2>
+              <p class="profile"><b>10th</b> Shri Shankaracharya Vidyalaya</p>
+              <p class="profile"><b>12th</b> Shakuntala Vidyalaya</p>
+              <p class="profile">
+                <b>B.E.</b> Government Engineering COllege Raipur
+              </p>
+            </div>
 
-				<div class="profile_block" id="profileInfo">
-					<h2 class="profile">Personal Info</h2>
-					<p class="profile"><i class="material-icons icon">person </i>Vishwas Paikra</p>
-					<p class="profile" id="years"><i class="material-icons icon" >cake </i></p>
-					<p class="profile"><i class="material-icons icon">call </i>0123456789</p>
-					<p class="profile"><i class="material-icons icon">email </i>vishwaspaikra007@gmail.com</p>
-					<p class="profile"><i class="material-icons icon">home </i>raipur chhattisgarh India</p>
-				</div>
+            <div class="profile_block" id="training">
+              <h2 class="profile">Training</h2>
+              <p class="profile">
+                Datascience with machine learning<br />from <b>Techienest</b>
+              </p>
+              <p class="profile">self taught web development</p>
+              <p class="profile">angular framwork from angular.io</p>
+            </div>
 
-				<div class="profile_block" id="education">
-					<h2 class="profile">Education</h2>
-					<p class="profile"><b>10th</b> Shri Shankaracharya Vidyalaya</p>
-					<p class="profile"><b>12th</b> Shakuntala Vidyalaya</p>
-					<p class="profile"><b>B.E.</b> Government Engineering COllege Raipur</p>
-				</div>
+            <div class="profile_block" id="aim">
+              <h2 class="profile">Achievements and Work</h2>
+              <p class="profile"><a href="https://www.codechef.com/users/vishwas_paikra" target="_blank">Codechef Profile</a></p>
+              <p class="profile"><a href="https://github.com/vishwaspaikra007?tab=repositories" target="_blank">Github Profile</a></p>
+              <br />
+              <h2 class="profile">Aim</h2>
+              <p class="profile">
+                <b>"</b>Well your company is looking for a skilled programmer
+                and experienced developer to grow your business and help your
+                company stand out from the competition.I have spent most of time
+                playing around with recent technologies and this have made me
+                quite an expert in the field of web development. Additinally I
+                always make sure that my pages takes less load time and space.<b
+                  >"</b
+                >
+              </p>
+            </div>
 
-				<div class="profile_block" id="training">
-					<h2 class="profile">Training</h2>
-					<p class="profile">Datascience with machine learning<br>from <b>Techienest</b></p>
-					<p class="profile">self taught web development</p>
-					<p class="profile">angular framwork from angular.io</p>
-				</div>
+            <div class="profile_block"></div>
+            <div class="profile_block"></div>
+            <div id="emptyBlock" class="profile_block"></div>
+          </div>
+        </div>
+        <div id="main">
+          <div class="resistance">
+            <h2>Some screenshots of some of my works</h2>
+          </div>
+          <div class="myWork">
+            <div class="animationContainerForContent" id="content1">
+              <div
+                class="myWorkBox btnCircularScaleA"
+                id="myWorkBox12"
+                onclick="openSite('https://fitx-c9b1d.web.app/')"
+              >
+                <img
+                  src="img/fitX-min.png"
+                  alt="FitX Demo"
+                  class="imgWork"
+                  id="imgWork1"
+                  onclick="expand(this)"
+                />
+                <a><h3 class="profile pTag">Open</h3></a>
+                <p>
+                  FitX E-Commerce Website<br />
+                  By using <b>ReactJS and Firebase</b>.
+                </p>
+              </div>
+            </div>
+            <div class="animationContainerForContent" id="content1">
+              <div
+                class="myWorkBox btnCircularScaleA"
+                id="myWorkBox11"
+                onclick="openSite('https://stegno-image.herokuapp.com/')"
+              >
+                <img
+                  src="img/steganography-min.png"
+                  alt="Steganography Demo"
+                  class="imgWork"
+                  id="imgWork1"
+                  onclick="expand(this)"
+                />
+                <a><h3 class="profile pTag">Open</h3></a>
+                <p>
+                  Image and Video Steganography<br />
+                  By using <b>FFmpeg, Jimp, and NodeJS</b>.
+                </p>
+              </div>
+            </div>
+            <div class="animationContainerForContent" id="content1">
+              <div
+                class="myWorkBox btnCircularScaleA"
+                id="myWorkBox10"
+                onclick="openSite('https://vishwaspaikra007.github.io/whatsapp-look-alike/')"
+              >
+                <img
+                  src="img/whatsapp-look-alike-min.png"
+                  alt="WhatsApp look alike Demo"
+                  class="imgWork"
+                  id="imgWork1"
+                  onclick="expand(this)"
+                />
+                <a><h3 class="profile pTag">Open</h3></a>
+                <p>
+                  WhatsApp look alike working<br />
+                  By using <b>MERN stack and Passport.js</b>
+                </p>
+              </div>
+            </div>
+            <div class="animationContainerForContent" id="content1">
+              <div
+                class="myWorkBox btnCircularScaleA"
+                id="myWorkBox9"
+                onclick="openSite('https://vishwaspaikra007.github.io/path-find-demo/')"
+              >
+                <img
+                  src="img/pathFind-min.png"
+                  alt="Path Find Demo"
+                  class="imgWork"
+                  id="imgWork1"
+                  onclick="expand(this)"
+                />
+                <a><h3 class="profile pTag">Open</h3></a>
+                <p>
+                  Path Find Demo<br />
+                  By using <b>Dijkstra Algorithm</b>, HTML, CSS, JS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="myWorkList">
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox8"
+              onclick="openSite('https://vishwaspaikra007.github.io/design/')"
+            >
+              <img
+                src="img/design-min.png"
+                alt="TODO Application"
+                class="imgWork"
+                id="imgWork1"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                Web Designs<br />
+                Here I design different web elements such as landing page,
+                forms, scroll effects/animations etc;
+              </p>
+            </div>
+          </div>
 
-				<div class="profile_block" id="aim">
-					<h2 class="profile">Achievements</h2>
-					<p class="profile">3 *** Competitive Programmer Codechef</p>
-					<br>
-					<h2 class="profile">Aim</h2>
-					<p class="profile">
-						<b>"</b>Well your company is looking for a skilled programmer and experienced developer to grow your business and help your company stand out from the competition.I 
-						have spent most of time playing around with recent technologies and this have made
-						me quite an expert in the field of web development. Additinally I always make sure that my pages takes less load time and space.<b>"</b>
-					</p>
-				</div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox1"
+              onclick="openSite('https://vishwaspaikra007.github.io/js13-back/')"
+            >
+              <img
+                src="img/patternUnlocked-min.png"
+                alt="Pattern Unlocked"
+                class="imgWork"
+                id="imgWork6"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                Pattern Unlocked<br />
+                My JS13 submission for 2019.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox8"
+              onclick="openSite('https://vishwaspaikra007.github.io/firebase-CRUD-TODO-redesign/')"
+            >
+              <img
+                src="img/todo-min.png"
+                alt="TODO Application"
+                class="imgWork"
+                id="imgWork1"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                Todo Application<br />
+                Using HTML, CSS, JS,
+                <b>service worker and FireStore (firebase)</b>
+                work is still going on.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox1"
+              onclick="openSite('https://vishwaspaikra007.github.io/js13-preparation/')"
+            >
+              <img
+                src="img/zombieVsAliens-min.png"
+                alt="Zombie vs Aliens"
+                class="imgWork"
+                id="imgWork6"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                Zombie vs Aliens<br />
+                Game developed with HTML5 canvas
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox1"
+              onclick="openSite('https://vishwaspaikra007.github.io/tic-tac-toe/')"
+            >
+              <img
+                src="img/ticTacToe-min.png"
+                alt="TicTacToe"
+                class="imgWork"
+                id="imgWork6"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                The first game TicTacToe.<br />
+                Play and enjoy and please suggest any improvement for it.<br />
+                mail me.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox7"
+              onclick="openSite('https://food-service-844e8.web.app/')"
+            >
+              <img
+                src="img/food-min.png"
+                alt="github"
+                class="imgWork"
+                id="imgWork1"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                A food service app.<br />
+                Made with <b>Angular</b> and <b>fireSore (firebase)</b>.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox3"
+              onclick="openSite('https://vishwaspaikra007.github.io/vishwas-paikra-poem/')"
+            >
+              <img
+                src="img/poem-min.png"
+                alt="poem"
+                class="imgWork"
+                id="imgWork3"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                Sometimes my soul emerges out as a Poet<br />
+                Helping me to turn words into beautifully arrranged sentence
+                causing it to rhyme.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox2"
+              onclick="openSite('https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/')"
+            >
+              <img
+                src="img/flames-min.png"
+                alt="flame game"
+                class="imgWork"
+                id="imgWork2"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                This is Flame Game.<br />
+                Game to know about your future relationship.
+              </p>
+            </div>
+          </div>
 
-				<div class="profile_block">
-					
-				</div>
-				<div class="profile_block">
-					
-				</div>
-				<div id="emptyBlock" class="profile_block">
-					
-				</div>
-			</div>
-			</div>
-			<div id="main">
-				<div class="resistance">
-					<h2>Some screenshots of some of my works</h2>
-				</div>
-				<div class="myWork">
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA " id="myWorkBox9" 
-					onclick="openSite('https://vishwaspaikra007.github.io/path-find-demo/')">
-							<img src="img/pathFind-min.png" alt="Path Find Demo" class="imgWork" id="imgWork1" onclick="expand(this)">
-							<a ><h3 class="profile pTag" >Open</h3></a>
-							<p>
-								Path Find Demo<br>
-								By using <b>Dijkstra Algorithm</b>, 
-								HTML, CSS, JS.
-							</p> 
-						</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA" id="myWorkBox8"
-					onclick="openSite('https://vishwaspaikra007.github.io/firebase-CRUD-TODO-redesign/')">
-							<img src="img/todo-min.png" alt="TODO Application" class="imgWork" id="imgWork1" onclick="expand(this)">
-							<a><h3 class="profile pTag" >Open</h3></a>
-							<p>
-								Todo Application<br>
-								Using HTML, CSS, JS, <b>service worker and FireStore (firebase)</b>
-								work is still going on.
-							</p> 
-						</div>
-					</div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox4"
+              onclick="openSite('https://vishwaspaikra007.github.io/lets-play-the-game-vishwas-paikra/')"
+            >
+              <img
+                src="img/letsPlayTheGame-min.png"
+                alt="Let's play the game"
+                class="imgWork"
+                id="imgWork5"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                Just playing around with<br />
+                Let's play the game.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox5"
+              onclick="openSite('https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/')"
+            >
+              <img
+                src="img/progressBar-min.png"
+                alt="progress bar"
+                class="imgWork"
+                id="imgWork4"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                It's a site for documentation.<br />
+                title and content side by side.
+              </p>
+            </div>
+          </div>
+          <div class="animationContainerForContent" id="content1">
+            <div
+              class="myWorkBox btnCircularScaleA"
+              id="myWorkBox6"
+              onclick="openSite('https://github.com/vishwaspaikra007')"
+            >
+              <img
+                src="img/github-min.png"
+                alt="github"
+                class="imgWork"
+                id="imgWork1"
+                onclick="expand(this)"
+              />
+              <a><h3 class="profile pTag">Open</h3></a>
+              <p>
+                This is my GitHub Account.<br />
+                Please check out now to know more about my work.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
+        <div class="resistance">
+          <img id="welcome" src="./image/welcomeNbg.png" alt="welcome text" />
+          <p id="para">
+            hello there it's very overwhelming for me to meet you. you have no
+            idea how blessed i'am feeling right now
+            <a href="https://github.com/vishwaspaikra007" target="_blank"
+              ><b>My Github profile link.</b></a
+            >
+          </p>
+        </div>
+        <div id="floatingWidget"></div>
+      </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      function setYears(e) {
+        let years = new Date().getFullYear() - 1998;
+        let month = new Date().getMonth() >= 9;
+        let date = new Date().getDate() >= 22;
+        years = month && date ? years : years - 1;
+        document.querySelector("#years").append(years + " years old");
+      }
+      setYears();
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-					<div class="animationContainerForContent" id="content1">
-						<div class="myWorkBox btnCircularScaleA" id="myWorkBox8"
-						onclick="openSite('https://vishwaspaikra007.github.io/design/')">
-							<img src="img/design-min.png" alt="TODO Application" class="imgWork" id="imgWork1" onclick="expand(this)">
-							<a><h3 class="profile pTag" >Open</h3></a>
-							<p>
-								Web Designs<br>
-								Here I design different web elements such as landing page,
-								forms, scroll effects/animations etc; 
-							</p> 
-						</div>
-					</div>
-
-					<div class="animationContainerForContent" id="content1">
-						<div class="myWorkBox btnCircularScaleA" id="myWorkBox1"
-						onclick="openSite('https://vishwaspaikra007.github.io/js13-back/')">
-							<img src="img/patternUnlocked-min.png" alt="Pattern Unlocked" class="imgWork" id="imgWork6" onclick="expand(this)">
-							<a><h3 class="profile pTag" >Open</h3></a>
-							<p>
-								Pattern Unlocked<br>
-								My JS13 submission for 2019.
-							</p>
-						</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-						<div class="myWorkBox btnCircularScaleA" id="myWorkBox1"
-						onclick="openSite('https://vishwaspaikra007.github.io/js13-preparation/')">
-							<img src="img/zombieVsAliens-min.png" alt="Zombie vs Aliens" class="imgWork" id="imgWork6" onclick="expand(this)">
-							<a><h3 class="profile pTag" >Open</h3></a>
-							<p>
-								Zombie vs Aliens<br>
-								Game developed with HTML5 canvas
-							</p>
-						</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA" id="myWorkBox1"
-					onclick="openSite('https://vishwaspaikra007.github.io/tic-tac-toe/')">
-						<img src="img/ticTacToe-min.png" alt="TicTacToe" class="imgWork" id="imgWork6" onclick="expand(this)">
-						<a><h3 class="profile pTag" >Open</h3></a>
-						<p>
-							The first game TicTacToe.<br>
-							Play and enjoy and please suggest any improvement for it.<br>
-							mail me.
-						</p>
-					</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-						<div class="myWorkBox btnCircularScaleA" id="myWorkBox7"
-						onclick="openSite('https://food-service-844e8.web.app/')">
-							<img src="img/food-min.png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
-							<a><h3 class="profile pTag" >Open</h3></a>
-							<p>
-								A food service app.<br>
-								Made with <b>Angular</b> and <b>fireSore (firebase)</b>.
-							</p> 
-						</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-						<div class="myWorkBox btnCircularScaleA" id="myWorkBox3"
-						onclick="openSite('https://vishwaspaikra007.github.io/vishwas-paikra-poem/')">
-							<img src="img/poem-min.png" alt="poem" class="imgWork" id="imgWork3" onclick="expand(this)">
-							<a><h3 class="profile pTag" >Open</h3></a> 
-							<p>
-								Sometimes my soul emerges out as a Poet<br>
-								Helping me to turn words into beautifully arrranged sentence causing it to rhyme.
-							</p>
-						</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA" id="myWorkBox2"
-					onclick="openSite('https://vishwaspaikra007.github.io/Flame-game-vishwas-paikra/')">
-						<img src="img/flames-min.png" alt="flame game" class="imgWork" id="imgWork2" onclick="expand(this)">
-						<a><h3 class="profile pTag" >Open</h3></a>
-						<p>
-							This is Flame Game.<br>
-							Game to know about your future relationship.
-						</p>
-					</div>
-					</div>						
-					
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA" id="myWorkBox4"
-					onclick="openSite('https://vishwaspaikra007.github.io/lets-play-the-game-vishwas-paikra/')">
-						<img src="img/letsPlayTheGame-min.png" alt="Let's play the game" class="imgWork" id="imgWork5" onclick="expand(this)">
-						<a><h3 class="profile pTag" >Open</h3></a>
-						<p>
-							Just playing around with<br>
-							Let's play the game.
-						</p>
-					</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA" id="myWorkBox5"
-					onclick="openSite('https://vishwaspaikra007.github.io/vishwas-paikra-progress-bar/')">
-					<img src="img/progressBar-min.png" alt="progress bar" class="imgWork" id="imgWork4" onclick="expand(this)">
-					<a><h3 class="profile pTag" >Open</h3></a>
-					<p>
-						It's a site for documentation.<br>
-						title and content side by side.
-					</p>	
-					</div>
-					</div>
-					<div class="animationContainerForContent" id="content1">
-					<div class="myWorkBox btnCircularScaleA" id="myWorkBox6"
-					onclick="openSite('https://github.com/vishwaspaikra007')">
-						<img src="img/github-min.png" alt="github" class="imgWork" id="imgWork1" onclick="expand(this)">
-						<a><h3 class="profile pTag" >Open</h3></a>
-						<p>
-							This is my GitHub Account.<br>
-							Please check out now to know more about my work.
-						</p> 
-					</div>
-					</div>
-				</div>
-				<div class="fullImage" id="fullImage1" onclick="abort(this)"></div>
-				<div class="resistance">
-					<img id='welcome' src="./image/welcomeNbg.png" alt="welcome text">
-					<p id="para">
-						hello there it's very overwhelming for me to meet you. you have no idea how blessed i'am feeling right now
-						<a  href="#myWorkBox6"><b>My Github profile link.</b></a>
-					</p>
-				</div>
-			</div>
-			<div id="floatingWidget"></div>
-		</div>
-	</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-	function setYears(e) {
-			let years = (new Date).getFullYear() - 1998
-			let month = (new Date).getMonth() >= 9
-			let date = (new Date).getDate() >= 22
-			years = month && date ? years : years - 1
-			document.querySelector('#years').append(years + " years old")
-	}
-	setYears()
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', '', { 'optimize_id': 'GTM-PH759TM'});
-</script>
-</body>
+      gtag("config", "", { optimize_id: "GTM-PH759TM" });
+    </script>
+  </body>
 </html>
