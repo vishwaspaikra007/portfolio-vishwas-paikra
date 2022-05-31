@@ -431,3 +431,38 @@ a {
     background-image: url("../image/bg2.jpg");
   }
 }
+:root {
+  --bg-color: radial-gradient(rgb(255, 85, 85), tomato, orange, yellow, rgb(42, 255, 42),white, rgb(35, 130, 255), darkcyan);
+}
+#new-website {
+  position: fixed;
+    left: 20px;
+    top: 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    backdrop-filter: blur(17px);
+    text-shadow: 0 0 2px black;
+    z-index: 2;
+    border: 5px dashed white;
+    cursor: pointer;
+    transition: 200ms;
+    background-position: 50%;
+    background-attachment: fixed;
+    font-weight: 700;
+    background-image: var(--bg-color);
+    animation: ani-web 5s linear 0s infinite alternate;
+    background-size: 500% 500%;
+}
+#new-website:hover {
+  transform: scale(1.1);
+}
+#new-website:active {
+  transform: scale(1);
+}
+@keyframes ani-web {
+  0% {background-position: 0% 0%;};
+  50% {background-position: 500% 500%;};
+  0% {background-position: 0% 0%;};
+}
